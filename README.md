@@ -1,65 +1,53 @@
-# Parkinson-detection-in-Unity
+# Parkinson's Detection in VR
 
 This project integrates virtual reality (VR) with an ONNX-based machine learning model for real-time Parkinson's detection through spiral drawing analysis.
 
-Project Overview
+## Project Overview
 
-Goal: Enable early detection of Parkinson's disease by analyzing user-drawn spirals in a VR environment.
+**Goal:** Enable early detection of Parkinson's disease by analyzing user-drawn spirals in a VR environment.
 
-Technologies: Unity (with XR toolkit), ONNX for machine learning inference, and VR interaction via XR Rig.
+**Technologies:** Unity (with XR toolkit), ONNX for machine learning inference, and VR interaction via XR Rig.
 
-Features
+## Features
 
-VR environment for user interaction using XR Rig.
+- VR environment for user interaction using XR Rig.
+- Real-time Parkinson's detection with ONNX model.
+- VR interaction with UI Canvas elements and buttons.
 
-Real-time Parkinson's detection with ONNX model.
+## File Structure
 
-VR interaction with UI Canvas elements and buttons.
+- **Parkinson01.unitypackage**: Contains the Unity project package with the VR scene and ONNX model integration.
+- **parkinson's spiral model.tm**: Trained machine learning model for spiral analysis.
 
-File Structure
+## Setup Instructions
 
-Parkinson01.unitypackage: Contains the Unity project package with the VR scene and ONNX model integration.
+### Prerequisites:
 
-README.md: Project documentation.
+- Unity 2021.3 LTS or later
+- XR Plugin Management enabled (for VR support)
 
-parkinson's spiral model.tm: Trained machine learning model for spiral analysis.
+### Import the Package:
 
-Setup Instructions
+1. Open Unity and go to `Assets → Import Package → Custom Package`.
+2. Select `Parkinson01.unitypackage` and import all assets.
 
-Prerequisites:
+### Configure XR Setup:
 
-Unity 2021.3 LTS or later
+1. Ensure XR Plugin Management is installed via `Project Settings → XR Plugin Management`.
+2. Set up the XR Rig prefab in the scene.
 
-XR Plugin Management enabled (for VR support)
+### Run the Project:
 
-Import the Package:
+1. Open the provided VR scene.
+2. Connect your VR headset.
+3. Press **Play** to interact and start real-time Parkinson's detection.
 
-Open Unity and go to Assets → Import Package → Custom Package.
+## Usage
 
-Select Parkinson01.unitypackage and import all assets.
+1. Navigate through the VR environment using the XR Rig.
+2. Draw spirals using the virtual interface.
+3. The ONNX model analyzes the spiral in real-time and provides feedback.
 
-Configure XR Setup:
-
-Ensure XR Plugin Management is installed via Project Settings → XR Plugin Management.
-
-Set up the XR Rig prefab in the scene.
-
-Run the Project:
-
-Open the provided VR scene.
-
-Connect your VR headset.
-
-Press Play to interact and start real-time Parkinson's detection.
-
-Usage
-
-Navigate through the VR environment using the XR Rig.
-
-Draw spirals using the virtual interface.
-
-The ONNX model analyzes the spiral in real-time and provides feedback.
-
-Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
